@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Tile Mania</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+		<script defer src="run.js"></script>
+	</head>
+	<body onload = "loadGame()">
+	  <div id = "win">Congratulations!</div>
+	  <table id = "table" border="1">
+	  
+	  </table>
+	  <div class = "buttons">
+		
+			<button class = "button" onclick="winGame(15)" style = "background-color: red">Auto Win</button>
+			<button class = "button" onclick="loadGame()" style = "background-color: green">Play Again</button>
+			<button class = "button" onclick="makeGame()">Make own Game</button>
+			<div id="makeGame">To make new game simply<br>clear board with<br>"Play Again", then click<br>the boxes that you want to<br>be in the new game,<br>then press<br>"Make own Game".<br>Voilà!</div>
+			
+			<div id="help">click down - swipe - click up<br>for faster playing</div>
+	  </div>
+	  
+	  
+	</body>
+</html>

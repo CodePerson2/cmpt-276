@@ -1,0 +1,101 @@
+html {
+  background-repeat:no-repeat;
+  min-height: 100%;
+
+  width: 100%;
+  height: auto;
+}
+body
+{
+  position: relative;
+  text-align: center;
+  background-image: radial-gradient(ellipse at top, #72579e, #a98ed4, transparent);
+
+}
+
+#table
+{
+  background-image: linear-gradient(to bottom right, red, blue, green);
+  position: relative;
+  display: inline-block;
+  float: left;
+  max-width: 76%;
+  border-radius: 5px;
+  box-shadow:10px 10px 4px grey;
+}
+
+.cell
+{
+  opacity: .7;
+  background: #d1e6d2;
+  cursor: pointer;
+}
+.header-top
+{
+  opacity: .7;
+  background: #d1e6d2;
+  font-size: 1em;
+  text-decoration-style: bold;
+  user-select: none;
+}
+#win
+{
+  display: none;
+  top: 40%;
+  left: 12%;
+  opacity: 2;
+  animation-name: winMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 6vw;
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+  padding: 3vw;
+  box-shadow:20px 20px 10px grey;
+  z-index: 2;
+  background-blend-mode: lighten;
+}
+@keyframes winMove {
+  0%   {color: red; font-size: 6vw;}
+  20%  {color: yellow; font-size: 12vw;}
+  40%  {color: green; font-size: 1vw;}
+  60%  {color: steelblue; font-size: 10vw;}
+  80%  {color: blue; font-size: 3vw;}
+  100% {color: red; font-size: 6vw;}
+}
+.button
+{
+  margin: 7px 0px;
+  padding: 5px 5px;
+  border: black solid 1px;
+  border-radius: 10%;
+  color: white;
+  background: steelblue;
+  cursor: pointer;
+  font-size: 2vw;
+  display: none;
+  box-shadow:10px 10px 4px grey;
+  
+}
+.buttons
+{
+  display:inline-block;
+  
+}
+#makeGame{
+  display: none;
+  background: white;
+  border-radius: 5px;
+  box-shadow:10px 10px 4px grey;
+  padding: 5px 5px;
+}
+#help
+{
+  display: none;
+  background: white;
+  border-radius: 5px;
+  box-shadow:10px 10px 4px grey;
+  padding: 5px 5px;
+  margin: 7px 0px;
+}
